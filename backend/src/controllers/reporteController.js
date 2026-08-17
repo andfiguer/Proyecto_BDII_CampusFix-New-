@@ -21,7 +21,7 @@ const reportePorEstado = async (req, res) => {
     }
 };
 
-// GET /api/reportes/tecnicos (Endpoint #9)
+// GET /api/reportes/tecnicos 
 const reportePorTecnico = async (req, res) => {
     try {
         const [filas] = await pool.query('SELECT * FROM vw_resumen_por_tecnico');

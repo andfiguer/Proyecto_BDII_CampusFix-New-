@@ -9,19 +9,19 @@ const {
     obtenerDetalleIntegrado 
 } = require('../controllers/incidenciaController');
 
-// POST /api/incidencias (Registrar - Público o protegido según decidas, lo dejo público por ahora para pruebas fáciles)
+// POST /api/incidencias (Registrar)
 router.post('/incidencias', registrarIncidencia);
 
-// GET /api/incidencias (Listar - Público)
+// GET /api/incidencias Listar
 router.get('/incidencias', listarIncidencias);
 
-// GET /api/incidencias/:id (Detalle Integrado - Público para que el frontend lo vea fácil)
+// GET /api/incidencias/:id (Detalle Integrado
 router.get('/incidencias/:id', obtenerDetalleIntegrado);
 
-// PUT /api/incidencias/:id/asignar (Asignar - PROTEGIDO con Token)
+// PUT /api/incidencias/:id/asignar (Asignar esta protegido con Token)
 router.put('/incidencias/:id/asignar', verificarToken, asignarTecnico);
 
-// PUT /api/incidencias/:id/estado (Cambiar Estado - PROTEGIDO con Token)
+// PUT /api/incidencias/:id/estado (Cambiar Estado - protegido con Token)
 router.put('/incidencias/:id/estado', verificarToken, cambiarEstado);
 
 module.exports = router;
