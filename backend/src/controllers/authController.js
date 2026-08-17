@@ -23,12 +23,12 @@ const login = async (req, res) => {
 
         const usuario = filas[0];
 
-        // 3. Verificar que esté activo
+        //  Verificar que esté activo
         if (!usuario.activo) {
             return res.status(403).json({ error: 'Usuario inactivo' });
         }
 
-        // 4. Comparar contraseña 
+        //  Comparar contraseña 
         const crypto = require('crypto');
         const hashIngresado = crypto.createHash('sha256').update(contrasena).digest('hex');
         
@@ -36,7 +36,7 @@ const login = async (req, res) => {
             return res.status(401).json({ error: 'Credenciales inválidas' });
         }
 
-        // 5. Generar Token
+        //. Generar Token
         const token = jwt.sign(
             { 
                 id: usuario.id_usuario, 
@@ -47,7 +47,7 @@ const login = async (req, res) => {
             { expiresIn: '2h' }
         );
 
-        // 6. Respuesta
+        //  Respuesta
         res.json({
             mensaje: 'Login exitoso',
             token,

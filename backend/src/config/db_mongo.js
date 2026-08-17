@@ -9,7 +9,6 @@ let db;
 const connectDB = async () => {
   try {
     await client.connect();
-    // Segun el Entregable 2, la base en Mongo se llama 'campusfix'
     db = client.db('campusfix'); 
     console.log('✅ MongoDB conectado correctamente');
   } catch (error) {
