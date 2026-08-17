@@ -1,25 +1,30 @@
 const jwt = require('jsonwebtoken');
 
-
 const verificarToken = (req, res, next) => {
-    const header = req.headers.authorization;
+    // Buscar el token en el header (Authorization: Bearer TOKEN)
+    const bearerHeader = req.headers['authorization'];
 
-    //  Si no hay header de autorización, rechazar
-    if (!header) {
-        return res.status(401).json({ error: 'Token no proporcionado' });
+    if (!bearerHeader) {
+        return res.status(403).json({ error: 'Acceso denegado: Token no proporcionado' });
     }
 
-    //  El formato debe ser: "Bearer <token>"
-    const token = header.startsWith('Bearer ') ? header.split(' ')[1] : header;
+    // El formato suele ser "Bearer <token>", así que cortamos la palabra Bearer
+    const token = bearerHeader.split(' ')[1];
+
+    if (!token) {
+        return res.status(403).json({ error: 'Formato de token inválido' });
+    }
 
     try {
-        //  Verificar que el token sea válido y no haya expirado
-        const datos = jwt.verify(token, process.env.JWT_SECRET);
-        req.usuario = datos; // Guardamos  id, rol, nombre 
-        next(); // 
+        // Verificar si el token es válido usando la clave secreta del .env
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        
+        // Guardamos la info del usuario en la request para usarla en los controladores
+        req.usuario = decoded; 
+        
+        next(); // Continuar con la ejecución del controlador
     } catch (error) {
-        //  Token inválido o expirado
-        return res.status(401).json({ error: 'Token inválido o expirado' });
+        res.status(401).json({ error: 'Token inválido o expirado' });
     }
 };
 
