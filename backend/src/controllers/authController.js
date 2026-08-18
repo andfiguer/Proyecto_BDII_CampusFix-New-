@@ -28,20 +28,20 @@ const login = async (req, res) => {
             return res.status(403).json({ error: 'Usuario inactivo' });
         }
 
-        //  Comparar contraseña 
+        //  Comparar contraseña
         const crypto = require('crypto');
         const hashIngresado = crypto.createHash('sha256').update(contrasena).digest('hex');
-        
+
         if (hashIngresado !== usuario.contrasena) {
             return res.status(401).json({ error: 'Credenciales inválidas' });
         }
 
         //. Generar Token
         const token = jwt.sign(
-            { 
-                id: usuario.id_usuario, 
+            {
+                id: usuario.id_usuario,
                 rol: usuario.id_rol,
-                nombre: usuario.nombre_completo 
+                nombre: usuario.nombre_completo
             },
             process.env.JWT_SECRET,
             { expiresIn: '2h' }

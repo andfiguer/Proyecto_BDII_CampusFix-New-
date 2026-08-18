@@ -1,12 +1,35 @@
 const express = require('express');
 const router = express.Router();
-const { reportePorEstado, reportePorTecnico } = require('../controllers/reporteController');
-const { verificarToken } = require('../middleware/authMiddleware');
 
-// GET /api/reportes/estados (PROTEGIDO)
-router.get('/reportes/estados', verificarToken, reportePorEstado);
+const {
+  reportePorEstado,
+  reportePorTecnico,
+  reportePorActivos
+} = require('../controllers/reporteController');
 
-// GET /api/reportes/tecnicos (PROTEGIDO)
-router.get('/reportes/tecnicos', verificarToken, reportePorTecnico);
+const {
+  verificarToken
+} = require('../middleware/authMiddleware');
+
+// Reporte de incidencias agrupadas por estado
+router.get(
+  '/reportes/estados',
+  verificarToken,
+  reportePorEstado
+);
+
+// Reporte de incidencias agrupadas por técnico
+router.get(
+  '/reportes/tecnicos',
+  verificarToken,
+  reportePorTecnico
+);
+
+// Reporte de activos con mayor número de incidencias
+router.get(
+  '/reportes/activos',
+  verificarToken,
+  reportePorActivos
+);
 
 module.exports = router;

@@ -1,0 +1,324 @@
+[
+  {
+    "_id": "6a791f9b7b38085067fa3350",
+    "incidenciaId": 1,
+    "tecnicoId": 3,
+    "descripcion": "Diagnostico de la incidencia 1",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Componente danado",
+    "solucionAplicada": "Reinstalacion de software",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa3351",
+    "incidenciaId": 2,
+    "tecnicoId": 4,
+    "descripcion": "Diagnostico de la incidencia 2",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Configuracion incorrecta",
+    "solucionAplicada": "Ajuste de configuracion",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa3352",
+    "incidenciaId": 3,
+    "tecnicoId": 2,
+    "descripcion": "Diagnostico de la incidencia 3",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Controlador desactualizado",
+    "solucionAplicada": "Limpieza del equipo",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa3353",
+    "incidenciaId": 4,
+    "tecnicoId": 3,
+    "descripcion": "Diagnostico de la incidencia 4",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Cable suelto",
+    "solucionAplicada": "Actualizacion de controladores",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa3354",
+    "incidenciaId": 5,
+    "tecnicoId": 4,
+    "descripcion": "Diagnostico de la incidencia 5",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Sobrecalentamiento",
+    "solucionAplicada": "Reinicio y prueba",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa3355",
+    "incidenciaId": 6,
+    "tecnicoId": 2,
+    "descripcion": "Diagnostico de la incidencia 6",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Software corrupto",
+    "solucionAplicada": "Reemplazo de pieza",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa3356",
+    "incidenciaId": 7,
+    "tecnicoId": 3,
+    "descripcion": "Diagnostico de la incidencia 7",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Falta de mantenimiento",
+    "solucionAplicada": "Reinstalacion de software",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa3357",
+    "incidenciaId": 8,
+    "tecnicoId": 4,
+    "descripcion": "Diagnostico de la incidencia 8",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Falla de energia",
+    "solucionAplicada": "Ajuste de configuracion",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa3358",
+    "incidenciaId": 9,
+    "tecnicoId": 2,
+    "descripcion": "Diagnostico de la incidencia 9",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Componente danado",
+    "solucionAplicada": "Limpieza del equipo",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa3359",
+    "incidenciaId": 10,
+    "tecnicoId": 3,
+    "descripcion": "Diagnostico de la incidencia 10",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Configuracion incorrecta",
+    "solucionAplicada": "Actualizacion de controladores",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa335a",
+    "incidenciaId": 11,
+    "tecnicoId": 4,
+    "descripcion": "Diagnostico de la incidencia 11",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Controlador desactualizado",
+    "solucionAplicada": "Reinicio y prueba",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa335b",
+    "incidenciaId": 12,
+    "tecnicoId": 2,
+    "descripcion": "Diagnostico de la incidencia 12",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Cable suelto",
+    "solucionAplicada": "Reemplazo de pieza",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa335c",
+    "incidenciaId": 13,
+    "tecnicoId": 3,
+    "descripcion": "Diagnostico de la incidencia 13",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Sobrecalentamiento",
+    "solucionAplicada": "Reinstalacion de software",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa335d",
+    "incidenciaId": 14,
+    "tecnicoId": 4,
+    "descripcion": "Diagnostico de la incidencia 14",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Software corrupto",
+    "solucionAplicada": "Ajuste de configuracion",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa335e",
+    "incidenciaId": 15,
+    "tecnicoId": 2,
+    "descripcion": "Diagnostico de la incidencia 15",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Falta de mantenimiento",
+    "solucionAplicada": "Limpieza del equipo",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa335f",
+    "incidenciaId": 16,
+    "tecnicoId": 3,
+    "descripcion": "Diagnostico de la incidencia 16",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Falla de energia",
+    "solucionAplicada": "Actualizacion de controladores",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa3360",
+    "incidenciaId": 17,
+    "tecnicoId": 4,
+    "descripcion": "Diagnostico de la incidencia 17",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Componente danado",
+    "solucionAplicada": "Reinicio y prueba",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa3361",
+    "incidenciaId": 18,
+    "tecnicoId": 2,
+    "descripcion": "Diagnostico de la incidencia 18",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Configuracion incorrecta",
+    "solucionAplicada": "Reemplazo de pieza",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa3362",
+    "incidenciaId": 19,
+    "tecnicoId": 3,
+    "descripcion": "Diagnostico de la incidencia 19",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Controlador desactualizado",
+    "solucionAplicada": "Reinstalacion de software",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a791f9b7b38085067fa3363",
+    "incidenciaId": 20,
+    "tecnicoId": 4,
+    "descripcion": "Diagnostico de la incidencia 20",
+    "pruebasRealizadas": [
+      "Prueba inicial",
+      "Prueba de verificacion"
+    ],
+    "causaProbable": "Cable suelto",
+    "solucionAplicada": "Ajuste de configuracion",
+    "fecha": "2026-08-10T00:47:23.438Z"
+  },
+  {
+    "_id": "6a794c07ab868cb200a1439a",
+    "incidenciaId": 21,
+    "tecnicoId": 2,
+    "descripcion": "El equipo no enciende, se reviso la fuente de poder",
+    "pruebasRealizadas": [
+      "Prueba de voltaje",
+      "Revision de cables"
+    ],
+    "causaProbable": "Fuente de poder danada",
+    "solucionAplicada": "Reemplazo de fuente de 500W",
+    "fecha": "2026-08-10T03:56:55.894Z"
+  },
+  {
+    "_id": "6a827e55f85e0b02f4d933fd",
+    "incidenciaId": 21,
+    "tecnicoId": 2,
+    "descripcion": "Revisión física del equipo",
+    "pruebasRealizadas": [
+      "Test de encendido"
+    ],
+    "causaProbable": "Cable suelto",
+    "solucionAplicada": "Reconexión de cable",
+    "fecha": "2026-08-17T03:21:57.215Z"
+  },
+  {
+    "_id": "6a828551f85e0b02f4d933fe",
+    "incidenciaId": 21,
+    "tecnicoId": 2,
+    "descripcion": "Revisión física del equipo",
+    "pruebasRealizadas": [
+      "Test de encendido"
+    ],
+    "causaProbable": "Cable suelto",
+    "solucionAplicada": "Reconexión de cable",
+    "fecha": "2026-08-17T03:51:45.544Z"
+  },
+  {
+    "_id": "6a828589f85e0b02f4d933ff",
+    "incidenciaId": 21,
+    "tecnicoId": 2,
+    "descripcion": "Revisión física del equipo",
+    "pruebasRealizadas": [
+      "Test de encendido"
+    ],
+    "causaProbable": "Cable suelto",
+    "solucionAplicada": "Reconexión de cable",
+    "fecha": "2026-08-17T03:52:41.563Z"
+  },
+  {
+    "_id": "6a83a64d437f439280908c92",
+    "incidenciaId": 33,
+    "tecnicoId": 2,
+    "descripcion": "Diagnóstico realizado desde el frontend",
+    "pruebasRealizadas": [
+      "Prueba de encendido",
+      "Prueba de red"
+    ],
+    "causaProbable": "Configuración de red incorrecta",
+    "solucionAplicada": "Se corrigió la configuración de red",
+    "fecha": "2026-08-18T00:24:45.148Z"
+  }
+]
