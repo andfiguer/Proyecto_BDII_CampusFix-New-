@@ -1,27 +1,48 @@
 const express = require('express');
 const router = express.Router();
-const { verificarToken } = require('../middleware/authMiddleware');
+
 const {
-    registrarIncidencia,
-    listarIncidencias,
-    asignarTecnico,
-    cambiarEstado,
-    obtenerDetalleIntegrado
+  registrarIncidencia,
+  listarIncidencias,
+  asignarTecnico,
+  cambiarEstado,
+  obtenerDetalleIntegrado
 } = require('../controllers/incidenciaController');
 
-// POST /api/incidencias (Registrar - Público o protegido según decidas, lo dejo público por ahora para pruebas fáciles)
-router.post('/incidencias', registrarIncidencia);
+const {
+  verificarToken
+} = require('../middleware/authMiddleware');
 
-// GET /api/incidencias (Listar - Público)
-router.get('/incidencias', listarIncidencias);
+// Registrar una incidencia
+router.post(
+  '/incidencias',
+  registrarIncidencia
+);
 
-// GET /api/incidencias/:id (Detalle Integrado - Público para que el frontend lo vea fácil)
-router.get('/incidencias/:id', obtenerDetalleIntegrado);
+// Listar incidencias activas
+router.get(
+  '/incidencias',
+  listarIncidencias
+);
 
-// PUT /api/incidencias/:id/asignar (Asignar - PROTEGIDO con Token)
-router.put('/incidencias/:id/asignar', verificarToken, asignarTecnico);
+// Consultar detalle integrado MySQL y MongoDB
+router.get(
+  '/incidencias/:id',
+  obtenerDetalleIntegrado
+);
 
-// PUT /api/incidencias/:id/estado (Cambiar Estado - PROTEGIDO con Token)
-router.put('/incidencias/:id/estado', verificarToken, cambiarEstado);
+// Asignar técnico: operación protegida con JWT
+router.put(
+  '/incidencias/:id/asignar',
+  verificarToken,
+  asignarTecnico
+);
+
+// Cambiar estado: operación protegida con JWT
+router.put(
+  '/incidencias/:id/estado',
+  verificarToken,
+  cambiarEstado
+);
 
 module.exports = router;

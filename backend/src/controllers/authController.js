@@ -23,31 +23,31 @@ const login = async (req, res) => {
 
         const usuario = filas[0];
 
-        // 3. Verificar que esté activo
+        //  Verificar que esté activo
         if (!usuario.activo) {
             return res.status(403).json({ error: 'Usuario inactivo' });
         }
 
-        // 4. Comparar contraseña 
+        //  Comparar contraseña
         const crypto = require('crypto');
         const hashIngresado = crypto.createHash('sha256').update(contrasena).digest('hex');
-        
+
         if (hashIngresado !== usuario.contrasena) {
             return res.status(401).json({ error: 'Credenciales inválidas' });
         }
 
-        // 5. Generar Token
+        //. Generar Token
         const token = jwt.sign(
-            { 
-                id: usuario.id_usuario, 
+            {
+                id: usuario.id_usuario,
                 rol: usuario.id_rol,
-                nombre: usuario.nombre_completo 
+                nombre: usuario.nombre_completo
             },
             process.env.JWT_SECRET,
             { expiresIn: '2h' }
         );
 
-        // 6. Respuesta
+        //  Respuesta
         res.json({
             mensaje: 'Login exitoso',
             token,

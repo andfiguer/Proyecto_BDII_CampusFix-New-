@@ -64,7 +64,7 @@ async function cargarReporte(ruta) {
 
     const filas = datos.datos.map((fila) => `
       <tr>
-        ${columnas.map((columna) => `<td>${fila[columna] ?? '-'}</td>`).join('')}
+        ${columnas.map((columna) => `<td>${fila[columna] !== null && fila[columna] !== undefined ? fila[columna] : '-'}</td>`).join('')}
       </tr>
     `).join('');
 
